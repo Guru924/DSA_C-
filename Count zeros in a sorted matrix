@@ -1,0 +1,27 @@
+#### GeekforGeeks
+<!-- guruprasadw74 --> 
+
+#### Category
+- [Count zeros in a sorted matrix] Question
+- [C++] Language
+- [0(N)] Time Complexity
+- [0(1)] Space Complexity
+- [] Solution--
+
+class Solution{
+public:
+	int countZeros(vector<vector<int>>A)
+	{
+		int i = 0, j = A.size()-1;
+		int count = 0;
+		while(i < A.size() && j>=0){
+		    if(A[i][j] == 1){
+		        j--;
+		    }else{
+		        count += j+1;
+		        i++;
+		    }
+		}
+		return count;
+	}
+};
