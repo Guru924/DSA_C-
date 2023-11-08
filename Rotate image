@@ -1,10 +1,10 @@
-Missing Test Case - 48. Rotate Image
-
 #### LEETCODE
 <!-- guruprasaddas924 --> 
 
 #### Category
 - [48. ROTATE IMAGE] Question
+-[0(logn^2)] Time Complexity
+-[0(1)] Space Complexity
 - [C++] Language
 - [] Solution--
 
