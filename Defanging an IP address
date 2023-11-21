@@ -1,0 +1,25 @@
+#### LEETCODE
+<!-- guruprasaddas924 --> 
+
+#### Category
+- [Defanging an IP address] Question
+- [C++] Language
+- [0(N)] Time Complexity
+- [0(N)] Space Complexity
+- [] Solution--
+
+class Solution {
+public:
+    string defangIPaddr(string address) {
+        string ans;
+        int index = 0;
+        while(index < address.size()){
+        if(address[index] == '.')
+        ans += "[.]";
+        else
+        ans += address[index];
+        index++;
+        }
+    return ans;
+    }
+};
