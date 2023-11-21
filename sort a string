@@ -1,0 +1,28 @@
+#### GeekforGeeks
+<!-- guruprasadw74 --> 
+
+#### Category
+- [sort a string] Question
+- [C++] Language
+- [0(N)] Time Complexity
+- [0(N)] Space Complexity
+- [] Solution--
+
+string sort(string s){
+    //complete the function here
+    vector<int>alpha(26,0);
+    for(int i = 0; i<s.size(); i++){
+        // a = 97, e = 101 101-97 = 4
+        alpha[s[i] - 'a'] ++;
+    }
+    
+    string ans;
+    for(int i = 0; i<26; i++){
+        char c = 'a' + i;
+        while(alpha[i]){
+            ans+=c;
+            alpha[i]--;
+            }
+        }
+    return ans;
+}
