@@ -1,0 +1,28 @@
+#### LEETCODE
+<!-- guruprasaddas924 --> 
+
+#### Category
+- [1832. Check if the Sentence Is Pangram] Question
+- [C++] Language
+- [0(N)] Time Complexity
+- [0(N)] Space Complexity
+- [] Solution--
+
+class Solution {
+public:
+    bool checkIfPangram(string sentence) {
+        if(sentence.size() <= 25)
+        return 0;
+        vector<bool>alpha(26,0);
+        for(int i = 0; i<sentence.size(); i++){
+
+            // a= 97, e = 101, 101 - 97 = 4
+            alpha[sentence[i] - 'a'] = 1; 
+        }
+        for(int i = 0; i<26; i++){
+            if(alpha[i] == 0)
+            return 0;
+        }
+        return 1;
+    }
+};
